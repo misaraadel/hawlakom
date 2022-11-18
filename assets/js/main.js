@@ -20,10 +20,10 @@ $(document).ready(function () {
         }, 100);
     });
 
-    $('.hamburger').click(function(){
-        $('.hamburger').toggleClass('active');
-        $('.navbar-nav').toggleClass('active-nav');
-        $('body').toggleClass('overflowNone')
+    $(".fav-btn").on('click', function(event) {
+        event.preventDefault();
+        
+        $(this).toggleClass("active");
     });
 
     var swiper = new Swiper(".swiper-header", {

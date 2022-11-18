@@ -30,10 +30,12 @@
               تسجيل دخول
             </span>
             
-            <img
-              src="assets/images/user.svg"
-              loading="lazy"
-              alt="" />
+            <div class="image-content">
+              <img
+                src="assets/images/user.svg"
+                loading="lazy"
+                alt="" />
+            </div>
           </a>
         </div>
       </div>
@@ -45,10 +47,12 @@
           <ul class="bottom-nav-list">
             <li>
               <a href="#" type="button" data-toggle="modal" data-target="#joinModal">
-                <img
-                  src="assets/images/plus.svg"
-                  loading="lazy"
-                  alt="" />
+                <div class="image-content">
+                  <img
+                    src="assets/images/plus.svg"
+                    loading="lazy"
+                    alt="" />
+                </div>
                 
                 <span class="primary">
                   انضم ك 
@@ -62,10 +66,12 @@
 
             <li>
               <a href="#" type="button" data-toggle="modal" data-target="#senderLoginModal">
-                <img
-                  src="assets/images/plus.svg"
-                  loading="lazy"
-                  alt="" />
+                <div class="image-content">
+                  <img
+                    src="assets/images/plus.svg"
+                    loading="lazy"
+                    alt="" />
+                </div>
                 
                 <span class="primary">
                   انضم ك 
@@ -81,10 +87,12 @@
           <ul class="bottom-nav-list">
             <li>
               <a href="favorite.html">
-                <img
+                <div class="image-content">
+                  <img
                   src="assets/images/heart.svg"
                   loading="lazy"
                   alt="" />
+                </div>
 
                 <span class="number">
                   3
@@ -98,10 +106,12 @@
 
             <li>
               <a href="#" type="button" data-toggle="modal" data-target="#contactModal">
-                <img
-                  src="assets/images/plus.svg"
-                  loading="lazy"
-                  alt="" />
+                <div class="image-content">
+                  <img
+                    src="assets/images/user.svg"
+                    loading="lazy"
+                    alt="" />
+                </div>
                 
                 <span class="light">
                   راسلنا
@@ -188,7 +198,8 @@
                   </h2>
   
                   <a href="#" class="fav-btn active">
-                    <img src="assets/images/heart.svg" loading="lazy" alt="" />
+                    <img src="assets/images/heart.svg" loading="lazy" class="border-heart" alt="" />
+                    <img src="assets/images/heart.png" loading="lazy" class="fill-heart" alt="" />
                   </a>
                 </div>
   
@@ -266,7 +277,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body">
-            <h1>
+            <h1 class="text-danger">
               ابحث بالطريقة المناسبة لك
             </h1>
             
@@ -280,7 +291,7 @@
                   العرض
                 </label>
 
-                <div class="form-group select-options">
+                <div class="form-group select-options bg-dark-shape">
                   <select class="form-control">
                     <option value="" hidden>
                       خريطة
@@ -310,7 +321,7 @@
                   المكان
                 </label>
 
-                <div class="form-group">
+                <div class="form-group select-options bg-dark-shape">
                   <select class="form-control">
                     <option value="" hidden>
                       الاقرب
@@ -332,7 +343,7 @@
                   الفئة
                 </label>
 
-                <div class="form-group">
+                <div class="form-group select-options bg-dark-shape">
                   <select class="form-control">
                     <option value="" hidden>
                       الكل
@@ -354,7 +365,7 @@
                   المجال
                 </label>
 
-                <div class="form-group">
+                <div class="form-group select-options bg-dark-shape">
                   <select class="form-control">
                     <option value="" hidden>
                       الكل
@@ -376,7 +387,7 @@
                   فرز حسب 
                 </label>
 
-                <div class="form-group">
+                <div class="form-group select-options bg-dark-shape">
                   <select class="form-control">
                     <option value="" hidden>
                       الاحدث
@@ -424,7 +435,7 @@
                   اسم المستخدم
                 </label>
 
-                <div class="form-group">
+                <div class="form-group bg-dark-shape">
                   <input type="text" class="form-control" placeholder="الجوال او الايميل" />
                 </div>
               </div>
@@ -434,7 +445,7 @@
                   الرقم السري
                 </label>
 
-                <div class="form-group">
+                <div class="form-group bg-dark-shape">
                   <input type="text" class="form-control" placeholder=" الرقم السري " />
                 </div>
               </div>
@@ -473,13 +484,13 @@
             </a>
 
             <form class="form-contain">
-              <div class="form-data">
-                <label for="">
+              <div class="form-data flex-column">
+                <label for="" class="mb-2 full-width text-center d-block">
                   ادخل البريد الالكتروني او رقم الجوال
                 </label>
 
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="الجوال او الايميل" />
+                <div class="form-group bg-dark-shape full-width">
+                  <input type="text" class="form-control text-center" placeholder="الجوال او الايميل" />
                 </div>
               </div>
 
@@ -500,7 +511,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body">
-            <h1>
+            <h1 class="text-danger">
               انشاء حساب جديد
             </h1>
             
@@ -514,7 +525,7 @@
                   البريد الالكتروني
                 </label>
 
-                <div class="form-group">
+                <div class="form-group bg-dark-shape">
                   <input type="text" class="form-control" placeholder="البريد الالكتروني" />
                 </div>
               </div>
@@ -524,7 +535,7 @@
                   رقم الجوال
                 </label>
 
-                <div class="form-group">
+                <div class="form-group bg-dark-shape">
                   <input type="text" class="form-control" placeholder="رقم الجوال" />
                 </div>
               </div>
@@ -534,7 +545,7 @@
                   الرقم السري
                 </label>
 
-                <div class="form-group">
+                <div class="form-group bg-dark-shape">
                   <input type="text" class="form-control" placeholder="الرقم السري" />
                 </div>
               </div>
@@ -544,7 +555,7 @@
                   المدينة
                 </label>
 
-                <div class="form-group">
+                <div class="form-group bg-dark-shape">
                   <input type="text" class="form-control" placeholder="المدينة" />
                 </div>
               </div>
@@ -580,7 +591,7 @@
                   كلمة المرور
                 </label>
 
-                <div class="form-group">
+                <div class="form-group bg-dark-shape">
                   <input type="text" class="form-control" placeholder=" كلمة المرور" />
                 </div>
               </div>
@@ -590,7 +601,7 @@
                   تاكيد كلمة المرور 
                 </label>
 
-                <div class="form-group">
+                <div class="form-group bg-dark-shape">
                   <input type="text" class="form-control" placeholder=" تاكيد كلمة المرور " />
                 </div>
               </div>
@@ -656,9 +667,9 @@
                   المدينة
                 </label>
 
-                <div class="row">
-                  <div class="col-6 px-2">
-                    <div class="form-group select-options">
+                <div class="row row-shape">
+                  <div class="col-4 px-1">
+                    <div class="form-group select-options full-width bg-dark-shape">
                       <select class="form-control">
                         <option value="" hidden>
                           حدد
@@ -683,9 +694,9 @@
                     </div>
                   </div>
 
-                  <div class="col-6 px-2">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="مدينة اخري" />
+                  <div class="col-8 pl-1">
+                    <div class="form-group full-width">
+                      <input type="text" class="form-control text-center" placeholder="مدينة اخري" />
                     </div>
                   </div>
                 </div>
@@ -756,9 +767,9 @@
                   المجال
                 </label>
 
-                <div class="row">
-                  <div class="col-6 px-2">
-                    <div class="form-group select-options">
+                <div class="row row-shape">
+                  <div class="col-4 px-1">
+                    <div class="form-group select-options full-width bg-dark-shape">
                       <select class="form-control">
                         <option value="" hidden>
                           حدد
@@ -783,9 +794,9 @@
                     </div>
                   </div>
 
-                  <div class="col-6 px-2">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="مجال اخري" />
+                  <div class="col-8 pl-1">
+                    <div class="form-group full-width">
+                      <input type="text" class="form-control text-center" placeholder="مجال اخري" />
                     </div>
                   </div>
                 </div>
@@ -796,9 +807,9 @@
                   المدينة
                 </label>
 
-                <div class="row">
-                  <div class="col-6 px-2">
-                    <div class="form-group select-options">
+                <div class="row row-shape">
+                  <div class="col-4 px-1">
+                    <div class="form-group select-options full-width bg-dark-shape">
                       <select class="form-control">
                         <option value="" hidden>
                           حدد
@@ -823,9 +834,9 @@
                     </div>
                   </div>
 
-                  <div class="col-6 px-2">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="مدينة اخري" />
+                  <div class="col-8 pl-1">
+                    <div class="form-group full-width">
+                      <input type="text" class="form-control text-center" placeholder="مدينة اخري" />
                     </div>
                   </div>
                 </div>
@@ -872,17 +883,13 @@
               </div>
 
               <div class="form-data">
-                <label for="">
-                  محتوي الرسالة
-                </label>
-
-                <div class="form-group text-area">
+                <div class="form-group text-area  full-width">
                   <textarea name="" class="form-control" placeholder="اكتب محتوي رسالتك هنا " id="" cols="30" rows="10"></textarea>
                 </div>
               </div>
               
-              <div class="button-contain">
-                <a href="#" class="custom-btn">
+              <div class="button-contain justify-content-end align-items-end align-content-end">
+                <a href="#" class="custom-btn ml-auto mr-0">
                   <span>
                     ارسال 
                   </span>
