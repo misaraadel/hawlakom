@@ -1642,7 +1642,7 @@ header .contain .button-list li a:hover::after {
 }
 
 .modal {
-  transform: translateY(20px) translateX(0px);
+  transform: translateY(20px) translateX(-10px);
   transition: all 0.3s linear;
   overflow: hidden;
   padding: 0px;
