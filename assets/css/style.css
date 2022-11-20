@@ -1148,6 +1148,14 @@ body {
           animation: tada 0.3s linear;
   filter: var(--secondary-filter);
 }
+.bottom-nav .contain .bottom-nav-list:nth-child(2) li {
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+}
+.bottom-nav .contain .bottom-nav-list:nth-child(2) li:last-child {
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
 
 header {
   width: 100%;
@@ -1188,7 +1196,7 @@ header .contain {
   align-items: center;
 }
 header .contain .brand-name img {
-  width: 120px;
+  width: 250px;
   height: 60px;
   -o-object-fit: contain;
      object-fit: contain;

@@ -176,6 +176,16 @@ body {
           }
         }
       }
+
+      &:nth-child(2) {
+        li {
+          margin-inline-end: 15px;
+
+          &:last-child {
+            margin-inline-end: 0px;
+          }
+        }
+      }
     }
   }
 }
@@ -221,7 +231,7 @@ header {
     align-items: center;
 
     .brand-name img {
-      width: 120px;
+      width: 250px;
       height: 60px;
       object-fit: contain;
     }
