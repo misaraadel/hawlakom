@@ -1632,9 +1632,13 @@ header .contain .button-list li a:hover::after {
   transform: translateY(20px) translateX(0px);
   transition: all 0.3s linear;
   overflow: hidden;
+  padding: 0px;
 }
 .modal.show {
   transform: translateY(0px) translateX(0px) !important;
+}
+.modal .modal-dialog {
+  width: 100%;
 }
 .modal .modal-dialog .modal-content {
   border-radius: 0px;

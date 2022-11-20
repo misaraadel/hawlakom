@@ -720,12 +720,15 @@ header {
   transform: translateY(20px) translateX(0px);
   transition: all .3s linear;
   overflow: hidden;
+  padding: 0px;
 
   &.show {
     transform: translateY(0px) translateX(0px) !important;
   }
 
   .modal-dialog {
+    width: 100%;
+
     .modal-content {
       border-radius: 0px;
       border: 0px;
