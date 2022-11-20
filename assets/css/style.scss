@@ -104,15 +104,17 @@ body {
       display: flex;
       align-items: center;
       align-content: center;
+      width: 50%;
 
       li {
-        margin-inline-end: 10px;
+        width: 50%;
 
         &:last-child {
           margin-inline-end: 0px;
         }
 
         a {
+          width: 100%;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -177,14 +179,8 @@ body {
         }
       }
 
-      &:nth-child(2) {
-        li {
-          margin-inline-end: 15px;
-
-          &:last-child {
-            margin-inline-end: 0px;
-          }
-        }
+      &:last-child {
+        width: 50%;
       }
     }
   }
@@ -736,6 +732,7 @@ header {
   transition: all .3s linear;
   overflow: hidden;
   padding: 0px;
+  margin: 0px;
 
   &.show {
     transform: translateY(0px) translateX(0px) !important;
@@ -743,6 +740,7 @@ header {
 
   .modal-dialog {
     width: 100%;
+    margin: 0px;
 
     .modal-content {
       border-radius: 0px;

@@ -1083,16 +1083,17 @@ body {
   display: flex;
   align-items: center;
   align-content: center;
+  width: 50%;
 }
 .bottom-nav .contain .bottom-nav-list li {
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  width: 50%;
 }
 .bottom-nav .contain .bottom-nav-list li:last-child {
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
 }
 .bottom-nav .contain .bottom-nav-list li a {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1148,13 +1149,8 @@ body {
           animation: tada 0.3s linear;
   filter: var(--secondary-filter);
 }
-.bottom-nav .contain .bottom-nav-list:nth-child(2) li {
-  -webkit-margin-end: 15px;
-          margin-inline-end: 15px;
-}
-.bottom-nav .contain .bottom-nav-list:nth-child(2) li:last-child {
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+.bottom-nav .contain .bottom-nav-list:last-child {
+  width: 50%;
 }
 
 header {
@@ -1650,12 +1646,14 @@ header .contain .button-list li a:hover::after {
   transition: all 0.3s linear;
   overflow: hidden;
   padding: 0px;
+  margin: 0px;
 }
 .modal.show {
   transform: translateY(0px) translateX(0px) !important;
 }
 .modal .modal-dialog {
   width: 100%;
+  margin: 0px;
 }
 .modal .modal-dialog .modal-content {
   border-radius: 0px;
