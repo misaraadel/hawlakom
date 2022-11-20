@@ -52,8 +52,12 @@
 button {
     outline: none;
     border: 0px;
+    background-color: transparent !important;
+    background: transparent;
 }
 
+
+input,
 .btn:focus,
 button:focus,
 input:focus,
