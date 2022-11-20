@@ -1,3 +1,5 @@
-@media (max-width: 999px) {
- 
+@media (max-width: 320px) {
+  .bottom-nav .contain .bottom-nav-list li a span {
+    font-size: 10px !important;
+  }
 }

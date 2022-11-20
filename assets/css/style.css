@@ -1853,4 +1853,10 @@ header .contain .button-list li a:hover::after {
 }
 .modal .bg-dark-shape .form-control::placeholder {
   color: var(--dark-color) !important;
+}
+
+@media (max-width: 320px) {
+  .bottom-nav .contain .bottom-nav-list li a span {
+    font-size: 10px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
