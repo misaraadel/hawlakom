@@ -729,9 +729,20 @@ header {
 }
 
 .modal {
+  transform: translateY(20px) translateX(-10px);
+  transition: all .3s linear;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px 10px;
+
+  &.show {
+    transform: translateY(0px) translateX(-10px) !important;
+  }
+  
 
   .modal-dialog {
     width: 100%;
+    margin: 0px;
 
     .modal-content {
       border-radius: 0px;
