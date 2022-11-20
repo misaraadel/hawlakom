@@ -145,6 +145,7 @@ body {
           span {
             font-size: 11px;
             font-weight: 500;
+            position: relative;
 
             &.light {
               color: var(--light-color);
@@ -164,8 +165,8 @@ body {
               justify-content: center;
               color: var(--secondary-color);
               position: absolute;
-              top: calc(50% - 7.5px);
-              left: 0px;
+              top: -10px;
+              left: -2px;
               border-radius: 50%;
             }
           }
