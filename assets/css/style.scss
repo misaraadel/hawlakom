@@ -389,6 +389,7 @@ header {
       background-color: var(--light-color);
       position: relative;
       z-index: 9;
+      border: 0px !important;
       overflow: hidden;
 
       &:first-child {
@@ -423,7 +424,6 @@ header {
       }
 
       &.active {
-        border: 1px solid var(--primary-color);
 
         &::after, &::before {
           background-color: var(--primary-color);
@@ -434,6 +434,7 @@ header {
         }
 
         &:hover {
+          border: 1px solid var(--primary-color) !important;
           span {
             color: var(--primary-color);
           }
@@ -441,7 +442,7 @@ header {
       }
 
       &:hover {
-        border: 1px solid #AEAEAE;
+        border: 1px solid #AEAEAE !important;
 
         &::after, &::before {
           width: 0px;

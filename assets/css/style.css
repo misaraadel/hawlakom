@@ -1351,6 +1351,7 @@ header .contain .button-list li a:hover::after {
   background-color: var(--light-color);
   position: relative;
   z-index: 9;
+  border: 0px !important;
   overflow: hidden;
 }
 .announcements .buttons-contain .custom-btn:first-child {
@@ -1380,20 +1381,20 @@ header .contain .button-list li a:hover::after {
 .announcements .buttons-contain .custom-btn::before {
   right: 0;
 }
-.announcements .buttons-contain .custom-btn.active {
-  border: 1px solid var(--primary-color);
-}
 .announcements .buttons-contain .custom-btn.active::after, .announcements .buttons-contain .custom-btn.active::before {
   background-color: var(--primary-color);
 }
 .announcements .buttons-contain .custom-btn.active span {
   color: var(--light-color);
 }
+.announcements .buttons-contain .custom-btn.active:hover {
+  border: 1px solid var(--primary-color) !important;
+}
 .announcements .buttons-contain .custom-btn.active:hover span {
   color: var(--primary-color);
 }
 .announcements .buttons-contain .custom-btn:hover {
-  border: 1px solid #AEAEAE;
+  border: 1px solid #AEAEAE !important;
 }
 .announcements .buttons-contain .custom-btn:hover::after, .announcements .buttons-contain .custom-btn:hover::before {
   width: 0px;
