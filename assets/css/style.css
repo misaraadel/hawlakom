@@ -1643,14 +1643,14 @@ header .contain .button-list li a:hover::after {
 }
 
 .modal {
-  transform: translateY(20px) translateX(-10px);
+  transform: translateY(20px) translateX(-3px);
   transition: all 0.3s linear;
   overflow: hidden;
   padding: 0px;
   margin: 0px 10px;
 }
 .modal.show {
-  transform: translateY(0px) translateX(-10px) !important;
+  transform: translateY(0px) translateX(-3px) !important;
 }
 .modal .modal-dialog {
   width: 100%;
