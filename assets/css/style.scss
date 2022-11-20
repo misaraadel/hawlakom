@@ -717,11 +717,12 @@ header {
 }
 
 .modal {
-  transform: translateY(20px);
+  transform: translateY(20px) translateX(0px);
   transition: all .3s linear;
+  overflow: hidden;
 
   &.show {
-    transform: translateY(0px);
+    transform: translateY(0px) translateX(0px) !important;
   }
 
   .modal-dialog {

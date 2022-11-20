@@ -1629,11 +1629,12 @@ header .contain .button-list li a:hover::after {
 }
 
 .modal {
-  transform: translateY(20px);
+  transform: translateY(20px) translateX(0px);
   transition: all 0.3s linear;
+  overflow: hidden;
 }
 .modal.show {
-  transform: translateY(0px);
+  transform: translateY(0px) translateX(0px) !important;
 }
 .modal .modal-dialog .modal-content {
   border-radius: 0px;
