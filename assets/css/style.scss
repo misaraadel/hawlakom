@@ -727,22 +727,21 @@ header {
     }
   }
 }
-
-.modal {
-  transform: translateY(20px) translateX(-3px);
+.modal.fade {
+  transform: translateY(20px);
   transition: all .3s linear;
+  padding: 0px !important;
   overflow: hidden;
-  padding: 0px;
-  margin: 0px 10px;
 
   &.show {
-    transform: translateY(0px) translateX(-3px) !important;
+    transform: translateY(0px);
   }
-  
+}
+
+.modal {
 
   .modal-dialog {
-    width: 100%;
-    margin: 0px;
+    max-width: 60%;
 
     .modal-content {
       border-radius: 0px;

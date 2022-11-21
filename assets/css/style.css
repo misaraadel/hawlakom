@@ -1642,19 +1642,18 @@ header .contain .button-list li a:hover::after {
   color: var(--secondary-color) !important;
 }
 
-.modal {
-  transform: translateY(20px) translateX(-3px);
+.modal.fade {
+  transform: translateY(20px);
   transition: all 0.3s linear;
+  padding: 0px !important;
   overflow: hidden;
-  padding: 0px;
-  margin: 0px 10px;
 }
-.modal.show {
-  transform: translateY(0px) translateX(-3px) !important;
+.modal.fade.show {
+  transform: translateY(0px);
 }
+
 .modal .modal-dialog {
-  width: 100%;
-  margin: 0px;
+  max-width: 60%;
 }
 .modal .modal-dialog .modal-content {
   border-radius: 0px;
@@ -1855,8 +1854,18 @@ header .contain .button-list li a:hover::after {
   color: var(--dark-color) !important;
 }
 
+@media (max-width: 999px) {
+  .modal-dialog {
+    max-width: 100% !important;
+    margin: 20px 0px 0px !important;
+  }
+  .modal-dialog .modal-content {
+    margin: 0px;
+    padding: 0px;
+  }
+}
 @media (max-width: 320px) {
   .bottom-nav .contain .bottom-nav-list li a span {
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,17 @@
+@media (max-width: 999px) {
+  .modal-dialog {
+    max-width: 100% !important;
+    margin: 20px 0px 0px !important;
+
+    .modal-content {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+
 @media (max-width: 320px) {
   .bottom-nav .contain .bottom-nav-list li a span {
-    font-size: 10px !important;
+    font-size: 8px !important;
   }
 }
